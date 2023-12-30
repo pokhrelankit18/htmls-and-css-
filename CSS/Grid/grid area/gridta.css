@@ -1,0 +1,41 @@
+body {
+    display: grid;
+    height: 200px;
+    grid-template-areas: "head head"
+        "nav  main"
+        "footer  footer";
+    grid-template-rows: 30px 1fr 30px;
+    grid-template-columns: 150px 1fr;
+}
+
+header {
+    grid-area: head;
+    background-color: lightsalmon;
+
+}
+
+
+
+.nav-bar {
+    grid-area: nav;
+    background-color: lightblue;
+}
+
+
+
+main {
+    grid-area: main;
+    background-color: lightyellow;
+}
+
+
+
+footer {
+    grid-area: footer;
+    background-color: firebrick;
+}
+
+/* The ‘head’ is written twice to imply two columns and the rest of the content follows the usual convention. The number of rows will be the number of ‘pairs of quotes’ you have used which in this case is three. Namely “head head”,
+“nav main” and “footer footer”. Once you know the number of rows and columns,
+the values for those will be set by grid-template-rows and grid-template-columns. Since these are three and two respectively here,
+you need to add that many values. The height simply gives the overall value of the height for the grid. */

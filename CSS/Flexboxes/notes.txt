@@ -1,0 +1,12 @@
+Flex boxes:
+t can grow, shrink and align the items inside it which give better control to the programmer over the contents and styling of the items inside the container.
+
+Links to learn:
+https://www.coursera.org/learn/html-and-css-in-depth/supplement/srX6c/understanding-flexbox
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-basics-and-terminology
+
+USES:
+1)Search bar
+2)Navigation bar
+3)Image gallery

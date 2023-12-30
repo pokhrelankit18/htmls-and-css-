@@ -1,0 +1,66 @@
+CSS Grid:
+Css grid divides the table into colume and rows and the space between them is called gutter.
+Cell is the container where rows and colume unite.
+
+You can add the grid value by using display property. i.e.
+display: grid;
+
+Now lets learn about the properties
+You have to set the parent element property to display: grid; Other should be done inside the parent.
+
+
+1)  
+grid-template-columns:200px 200px 200px; --this will make three column of the given child element each of 200px.
+grid-template-columns:1fr 1fr 1fr; -- this will divide whole screen to three parts allocating one part for one column.
+Similar for rows too. just make grid-template-rows
+
+2)
+grid-gap: 20px;
+Name will suggest itself
+
+3)
+You can use repeat function to reduce your code length.
+eg 
+grid-template-columns:200px 200px 200px;
+as
+grid-template-columns:repeat(3, 200px);
+
+4) 
+column-gap: 200px
+row-gap: 200px
+
+5)
+grid-auto-rows: 100px;
+grid-auto-columns: 100px;
+
+The width and the height of the grid element is set to the width and height of the content explictly but to give them our desired dimension we use these two property.
+
+Senerio: What if we want to make give the minimun and maximum height so for that we use 
+
+grid-auto-rows: minmax(100px,auto);
+grid-auto-columns: minmax(100px,auto);
+
+Minimum is set to 100px and maximum is set to auto.
+
+Lets understand some shorthand!(This action will make responsive website.)
+
+grid-template-columns:repeat(autofill, minmax(100px,1fr));
+
+Lets's breakdown!
+repeat to repeat that spicific thing for all.
+autofill -- to fill the content with given minmax values.
+
+If you visit inspect then you can see those rows and column.
+
+Let's understand about some design for child element!
+
+1) 
+grid-column-start:2;
+grid-column-end:3;
+Similar for rows too but remember that to know exactely where to shift you should inspect and see the numbers.
+
+You can make things bigger and smaller too.
+
+
+2) Nested boxes
+To nest other boxes inside previous box you just need to make display: grid; and do all the coding as previous.

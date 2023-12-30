@@ -1,0 +1,43 @@
+.parent
+{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.segment
+{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    grid-template-rows: 50px;
+    border-radius: 100px;
+    border: 8px solid black;
+}
+
+.one{
+    background-color: lightgreen;
+    grid-column: 6/ span 2;   /*Start from one and reach to 12 grids*/
+}
+
+.two{
+    background-color: rgb(65, 58, 164);
+    grid-column: 5/ span 4;   /*Start from one and reach to 12 grids*/
+}
+
+.three{
+    background-color: rgb(164, 58, 58);
+    grid-column: 4/ span 6;   /*Start from one and reach to 12 grids*/
+}
+.four{
+    background-color: rgb(58, 164, 160);
+    grid-column: 3/ span 8;   /*Start from one and reach to 12 grids*/
+}
+.five{
+    background-color: rgb(14, 97, 230);
+    grid-column: 2/ span 10;   /*Start from one and reach to 12 grids*/
+}
+.six{
+    background-color: rgb(40, 66, 107);
+    grid-column: 1/ span 12;   /*Start from one and reach to 12 grids*/
+}
+
