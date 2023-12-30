@@ -1,0 +1,33 @@
+Forms Submission:
+
+METHODS:
+There are two methods that a form can be submitted to server.
+1)http GET method
+2)http POST method
+
+Syntax: <form method="GET/POST">
+
+GET:
+When the Login button is clicked, the form data is sent as part of the request URL. This means that the user data is appended to the end of the URL in the web browser navigation bar. The web server receives the HTTP GET request, and extracts the form data from the URL. It is an easy method but has three problems:
+1)URL length limited by browser
+2)URL lenght limited by webserver
+3)Security threats
+
+POST:
+When the form is submitted using the post method, the form data is inserted into the content of the HTTP request. When the submit button is pressed, it will send an HTTP post request with the data contained in the body of the request. The HTTP post method is more secure than the HTTP GET method.However, the data could still be read by a third party listening to the HTTP request. To secure this completely, HTTPS is used to encrypt the data so that only the sender and receiver can understand the data. 
+
+POST method is best! 
+The form will default to the HTTP GET method when the method attribute is not provided. 
+
+
+ACTIONS:
+The action attribute specifies to which web address the form must be sent. This is address is location of server-side code that will process the request.
+
+<form action="/login">
+
+Extra Notes:
+It is important to note that action can be a full URL address such as https://meta.com, an absolute path such as /login, or a relative path such as login. 
+
+The absolute path, which starts with a forward slash, will use the base address of the current website, such as https://meta.com and combine it with the absolute path. For example, if /login is the absolute path, the form will be submitted to https://meta.com/login. If the address is https://meta.com/company-info/ and /login is the absolute path, the submission address will still be https://meta.com/login.
+
+Similarly, a relative path will combine the current web address with a relative path. For example, if the web browser is currently on the web page https://meta.com/company-info/, and the relative path is set to login, the form will be submitted to https://meta.com/company-info/login. 

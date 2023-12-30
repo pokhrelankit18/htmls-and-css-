@@ -1,0 +1,26 @@
+video:
+The video format supported by many websites are:
+MP4, WebM, and OGG.
+<video width="100px" height="100px" controls>
+    <source src="video address" type="video/mp4">
+    <!--Try giving multiple format so that which format is supported is displayed-->
+    <source src="video address" type="video/ogg">
+</video>
+
+audio:
+The audio format supported by many websites are:
+MP3(mpeg), WAV, and OGG.
+ 
+<audio controls>
+    <source src="audio address" type="audio/ogg">
+    <!--Try giving multiple format so that which format is supported is displayed-->
+    <source src="audio address" type="audio/mpeg">
+</audio>
+
+Image:
+It is important to ensure that screen reader accessibility software can interpret images displayed in the web browser. To support this, the <img> tag is combined with the <figure> and <figcaption> tags to provide a description of the image. The <img> tag is added inside the <figure> tag and the <figcaption> is specified after it. 
+
+<figure> 
+   <img src="photo.png" width="320" alt="My Profile Photo"> 
+   <figcaption>A photo of myself on a beach in 2015</figcaption> 
+</figure>

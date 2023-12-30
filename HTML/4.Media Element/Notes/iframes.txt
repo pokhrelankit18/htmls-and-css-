@@ -1,0 +1,19 @@
+iFrame:
+Senerio:A small business is planning to embed advertisements on their website and you have to create an iframe to set up an image on their website. 
+An iframe is HTML element that allows you to place or embed content from another website into a webpage. It's defined using the iframe HTML tag. How it works is that it embeds another browsing instance inside the page.
+
+<iframe src="...." > </iframe>
+
+It will impose security errors when unsecurely used. To prevent that there are some attribute that limits the behaviour of iframe.
+
+allow attribute:(not allowing camera access and microphone access by the browser)
+<iframe src=".." allow="camera 'none'; microphone 'none';"> </iframe>
+
+sandbox attribute:(Preventing files from downloading and preventing popups)
+<iframe src="" sandbox=""></iframe> --This will deny all sandbox options
+
+You can be specific on what to allow by foing this-
+<iframe src="" sandbox="allow-downloads"></iframe> 
+
+
+Note: Be cautious when using iframe and use only trusted websites

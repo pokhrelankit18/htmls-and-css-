@@ -1,0 +1,69 @@
+
+Button
+
+This displays a clickable button and it’s mostly used in HTML forms to activate a script when 
+clicked. <input type="button" value="Click me" onclick="msg()" />
+Keep in mind you can also define buttons with the <button> tag, with the added benefit of being
+able to place content like text or images inside the tag.
+
+Checkbox
+Defines a check box allowing single values to be selected or deselected. They are used to let 
+a user select one or more options of a limited number of choices.
+
+Radio
+Displays a radio button, allowing only a single value to be selected out of multiple choices.
+They are normally presented in radio groups, which is a collection of radio buttons describing 
+a set of related options that share the same "name" attribute.
+
+Submit
+Displays a submit button for submitting all values from an HTML form to a form-handler, typically
+a server. The form-handler is specified in the form’s "action" attribute:
+
+Password
+Defines a single-line text field whose value is obscured, suited for sensitive information like passwords.
+
+Date
+Displays a control for entering a date with no time (year, month and day).
+
+Datetime-local
+Defines a control for entering a date and time, including the year, month and day, as well as the time in hours and minutes.
+
+Email
+Defines a field for an email address. It’s similar to a plain text input, with the addition that it validates automatically when submitted to the server.
+
+File
+Displays a control that lets the user select and upload a file from their computer. To define the types of files permissible you can use the "accept" attribute. Also, to enable multiple files to be selected, add the "multiple" attribute.
+
+Hidden
+Defines a control that is not displayed but whose value is still submitted to the server.
+
+Image
+Defines an image as a graphical submit button. You should use the “src” attribute to point to the location of your image file.
+
+Number
+Defines a control for entering a number. You can use attributes to specify restrictions, such as min and max values allowed, number intervals or a default value.
+
+Range
+Displays a range widget for specifying a number between two values. The precise value, however, is not considered important. This is typically represented using a slider or dial control. To define the range of acceptable values, use the “min” and “max” properties.
+
+Reset
+Displays a button that resets the contents of the form to their default values.
+
+Search
+Defines a text field for entering a search query. These are functionally identical to text inputs, but may be styled differently depending on the browser.
+
+Time
+Displays a control for entering a time value in hours and minutes, with no time zone.
+
+Tel
+Defines a control for entering a telephone number. Browsers that do not support “tel” fall back to standard text input. You can optionally use the "pattern" field to perform validation.
+
+Url
+Displays a field for entering a text URL. It works similar to a text input, but performs automatic validation before being submitted to the server.
+
+Week
+Defines a control for entering a date consisting of a week-year number and a year, with no time zone. Keep in mind that this is a newer type that is not supported by all the browsers.
+
+Month
+Displays a control for entering a month and year, with no time zone. Keep in mind that this is a newer type that is not supported by all the browsers.
+

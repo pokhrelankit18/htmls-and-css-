@@ -1,0 +1,13 @@
+This is the property that will defines how the website preview is shown in your browser.
+Senerio: You shared some link in messenger and messenger itself display some content of that website
+before you even opened. How? Here comes open graphing property.
+There are basically five tags to be included and they are listed below:
+   
+    <!--Open Graph Protocol-->
+    <!--
+        <meta property="og:title" content="A brief description">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https:// website_name">
+        <meta property="og:description" content="A brief description">
+        <meta property="og:image" content="image.png">
+    -->

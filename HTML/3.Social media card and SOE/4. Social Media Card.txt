@@ -1,0 +1,19 @@
+They are the card to be displayed to catch the user attention in small amount of time when shared in other platforms.
+They should be designed in such a way that it catches user attention and make them click that 
+link. So how to make such cards?
+
+Senerio: You just made a sample website of a resturant and now it is ready to be published so now you need to make a social media card to share your website link in other platform and make that link card to be appling. How?
+
+You need to add four meta tags inside head tag.
+
+        <meta property="og:title" content="Our Menu">  --This will give the title to your card. This is not the title of you website.
+        <meta property="og:type" content="website"> -- This will inform the browser that this content shared is a website.
+        <meta property="og:url" content="https:// website_name"> -- url of your website
+        <meta property="og:image" content="image.png"> -- Preview image
+         
+
+This will be enough to make you your card but if you want to add more then their are three more meta tags listed below(Optional):
+
+<meta property="og:description" content="A brief description"> -- will give the description of the webpage 
+<meta property="og:locale" content="en_US">-- define the language of the content being shared
+<meta property="og:site_name" content="Little Lemon"> -- displays the name of website

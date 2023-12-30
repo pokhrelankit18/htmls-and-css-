@@ -1,0 +1,13 @@
+The different web browers are made by different companies so form will behave differntly in different browsers.
+e.g.
+<input> 
+<input type="checkbox">
+
+How to solve this?
+You can do this by applying different CSS propeties.
+
+new:
+ input[type=email]
+{
+    propeties
+}

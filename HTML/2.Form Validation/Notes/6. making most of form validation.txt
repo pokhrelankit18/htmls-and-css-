@@ -1,0 +1,33 @@
+Now we will learn how to make most out of client side form validates...
+
+1)No Empty field is left
+ use required attributes
+
+2)Length of data
+ i.e. for password Length 
+ use" required minlength="3" maxlength="12" " to specify your length
+
+3) Pseudo selectors
+ they are used to select elements based on their state, such as whether the input data is 
+ valid or invalid. Basically it uses CSS to change the color
+
+
+Radio buttons:
+
+input>type:radio
+The name should be same for two radio buttons to work.
+
+use <fieldset id="size">
+    <input type="radio" value=".." name="size"> Text to be displayed
+    <input type="radio" value=".." name="size" checked> Text to be displayed
+    </fieldset>
+use <fieldset id="location">
+    <input type="radio" value=".." name="location"> Text to be displayed
+    <input type="radio" value=".." name="location" checked> Text to be displayed
+    </fieldset>
+
+
+
+--- The fieldset attribute will  group your radio buttons.
+Make sure you enteres the same id for fieldset and name for input tag.
+-- To make responsive you should include each radio buttons in lable
