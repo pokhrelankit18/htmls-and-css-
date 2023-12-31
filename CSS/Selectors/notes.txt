@@ -1,0 +1,186 @@
+Selectors:
+
+Specificity hierarchy
+CSS has a set of rules that it uses to ‘score’ or assign a certain weight to selectors and this creates a specificity hierarchy. Based on the weights, there are four categories in this hierarchy: 
+
+1.Inline styles 
+2.IDs 
+3.Classes, attributes, and pseudo-classes 
+4.Elements and pseudo-elements 
+
+Note: Their is the system of numbering the priority order for the selectors which you search for yourself.
+
+You already learned about ID, Class and element selectors.Lets learn about others:
+1)Attribute selectors:
+They are used to select specific attribute element.
+ 
+a) Targeting class
+
+ e.g. a[class]
+ {
+
+ }
+--All the elements containing class will be targeted.
+
+b) Targeting Specific names:
+
+e.g. 
+a[href *="meta"]
+{
+
+}
+--All the ancor tag having href meta in them are targeted
+
+c) Targeting specific attribute name
+
+e.g 
+a[href ="whole_link"]
+{
+
+}
+-- You can use attribute selectors where ever you need and modify accordingly so it is the most flexible tool
+
+2) nth-of-type and nth-child selectors
+- It is used to target child and parent elements
+
+eg 
+
+<ul>
+<li>one</li>
+<li>two</li>
+<li>three</li>
+</ul>
+
+nth-of-type:
+li:nth-of-type(2)
+{
+
+}
+
+nth-child selector:
+li:nth-child(2)
+{
+
+}
+
+--Both action will target second li element
+
+3) Star selector:
+*{
+
+}
+
+-- It is used to select all elements.
+
+4) Group Selectors or selector stacking
+
+eg
+h1,p,div{
+
+}
+
+Note: You can use element and class together to take on specific element.
+
+
+Next module:(Combination selectors)
+
+CSS makes it possible to combine more than one selector so that you can apply rules to elements based on their relationship with one another.
+
+1)
+Descendant selectors:
+
+ Descendant selectors are useful if you need to select HTML elements that are contained within another selector.Basically you can combine class and id's with element to be more specific.
+
+e.g.
+#blog h1{
+
+}
+ 
+ --Note that the blog is the id of parent element and h1 is its child. All the h1 elements inside the id blog are selected.
+
+ 2)
+ Child Selectors:
+
+ They will target the immediate child of the parent element containing the id blog.
+
+ e.g.
+  #blog > h1{
+
+}
+
+Note: Not all the elements are selected so this one is more specific.
+
+3)
+General sibing selectors
+This selector wil target all the siblings of the parent elements.
+
+e.g.
+h1 ~ p {
+
+}
+
+All the p elements inside the h1 are selected.
+
+4)
+Adjacent sibling selectors
+Selects the first subsequent element if it matches the selector. 
+
+div + p
+{
+
+}
+ --Only the first element p tag inside div tag is selected
+
+
+
+
+ Module 3: (Pseudo Class Selectors)
+
+ -They are the state based selectors.
+e.g hover
+
+Syntax:
+selector:pseudo-class
+{
+property:value
+}
+
+1)User action state.
+a) :hover --which changes the style of an element when a cursor hovers over it.
+b) :active --which styles an element only while a user actively presses and holds the mouse button
+c) :focus --which focuses styling on the element that you use it for
+
+2)Form state.
+1) :disabled and :enabled--generally used for buttons
+2):checked and :indeterminate --that are used for checkboxes
+3):valid and :invalid --used in case of fields like emails and phone numbers
+
+3)Specific Position-based states
+They allow you to target specific items, for instance, a specific list item among the list elements. 
+1) :first-of-type 
+2) :last-of-type 
+3) :nth-of-type() 
+4) :nth-last-of-type() 
+
+
+Others selectors include:
+::first-letter
+You can use first-letter to change the color of just the first letter of each of the three points in the example text.
+
+::first-line
+First-line will change the complete first line of each of the bullet points to light sea green. 
+
+:selection
+Selection is another useful pseudo-element. For example, you may use it when you are taking notes on your device because it allows you to highlight specific text. The effect of it becomes obvious only after the user selects content. On web pages today, you will typically see inverted colors from white-black to black-white when selecting a portion of text.
+
+::marker  
+Markers are typically used to add style elements to a list, for instance, to color bullet points. For example, you can enhance the user experience when you use a marker in the following way.    
+
+::before and ::after
+One more pair of pseudo-elements are the ::before and ::after pseudo-elements. They allow you to add content before and after an element on which they are allowed. In other words, new content can be added to a page without adding HTML code for it. You can also add styling options for this content. Let’s do an example where text is added both before and after some cooking guidelines to identify them as important tips.
+
+
+--Use your own imagination to create.
+-- While using 1)User action state. always remember the format "LVHA" i.e. First link, then visited, next hover, and lastly active. 
+
+More detail: https://www.coursera.org/learn/html-and-css-in-depth/supplement/zbsTK/css-pseudo-cheat-sheet
