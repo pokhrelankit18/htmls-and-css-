@@ -1,0 +1,29 @@
+Transform and the transition:
+
+Transform:
+The transform property modifies the spatialposition of an element. For instance, it canchange its scale and angle.
+
+Transition:
+The delay in the transformtion can be achieved by using transition property.
+
+Let's see some of the examples:
+
+Transform:
+
+h1
+{
+    transform: rotate(0deg);
+}
+h1:hover
+{
+    transform: rotate(20deg);
+}
+ 
+ Note: Only transform will cause the transition so rapid so to overcome that we tend to use both in unison.
+
+Transition:
+
+h1
+{
+    transition: transform 2s;
+}

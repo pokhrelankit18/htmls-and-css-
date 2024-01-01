@@ -1,0 +1,44 @@
+CSS Effects:
+There are lot's of CSS effects too boost the user experiences. It has both pros and cons but overall the pros are more than the cons.
+
+Text Effects:
+1)Overflow property
+
+ text-overflow: ellipsis | hidden | scroll | clip; 
+
+
+ The text-overflow property specifies what to do with the content if it overflows its container.
+
+ ellipsis:  will cause text to be hidden in the three dots form and will show text if you hover over it. if hover property is shown to visible as
+  .text:hover{
+    overflow: visible;
+  }
+
+clip:  will cause the additional content is truncated to fit within the limits of the box.
+
+Try others by yourself.
+
+Others:
+
+ --white-space: nowrap;
+
+ The white-space CSS property controls how white-space inside an element is handled.
+
+ --writing-mode: vertical-rl.
+ 
+ The text will be in the vertical format.
+
+ --word-wrap: break-word | normal | initial;
+
+ break-word-- word will be broken into different pieces.
+
+ -- text-shadow: 0 0 30px green, 0 0 5px white;
+
+ shorthand for different properties which includes.
+ 1-> x-coordinate --which represents the horizontal shadow. 
+ 2-> y-coordinate-- which represents the vertical shadow. 
+ 3-> Blur radius
+ 4-> Shadow color. 
+
+
+ More Knowledge: https://www.coursera.org/learn/html-and-css-in-depth/supplement/xppBt/text-effects-cheat-sheet
