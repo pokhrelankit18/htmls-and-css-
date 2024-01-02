@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        @keyframes bounce
+        {
+            from{
+                transform: translate3d(0,0,0);
+            }
+             to{
+                transform: translate3d(0,600px,0);
+            }
+        }
+
+        .ball
+        {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: red;
+            animation: bounce 1s infinite alternate linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

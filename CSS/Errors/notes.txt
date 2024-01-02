@@ -1,0 +1,29 @@
+You cannot use number to the class name.
+
+How to avoid the errors?
+1) Writing the short hand instead of using long commands.
+2)Learn the priority of the selectors and use them wisely to remove the time delay by browser.
+3) Use the star selectors to reduce the errors made by the browser.
+
+Handeling errors in CSS 
+
+Note their is the extension in the VS code namely  Stylelint which basically does is it will gather all the styles that we doesnot want to add but we added and now it is difficult to search for each styles.
+
+How to work with it?
+Install the extension in VS code called  Stylelint
+ Create and add a file called ‘.stylelinttrc.json’ to your project directory
+The extension will look for this file inside any project folder you are working with. 
+Add the rules in JSON object format as below, these are the same as the ones you used in ‘Handling errors’.
+{ 
+"rules": { 
+
+        "alpha-value-notation": "number", 
+        "selector-type-case": "lower", 
+        "color-no-hex": true 
+} 
+
+} 
+
+Visit the problem panal to view the errors and make them right heheheh.
+
+Your CSS code may not run as expected in different browser and may cause compability issue so to tackle that you can use media query to code for the specific browsers and also there are many websites that allows us to check our code compability with other browsers.
